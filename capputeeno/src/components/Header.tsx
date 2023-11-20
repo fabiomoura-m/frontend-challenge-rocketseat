@@ -34,6 +34,7 @@ const Logo = styled.a`
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
+    text-decoration: none;
 
     @media (min-width: ${props => props.theme.tabletBreakpoint}){
         font-size: 24px;
@@ -49,7 +50,7 @@ export function Header() {
     
     return (
         <TagHeader>
-            <Logo className={sairaStence.className}>capputeeno</Logo>
+            <Logo className={sairaStence.className} href='/'>capputeeno</Logo>
             <div>
                 <PrimaryInputWSearchIcon value={search} handleChange={setSearch} placeholder='Procurando por algo específico?' />
                 <CartControl/>
